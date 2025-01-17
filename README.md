@@ -9,8 +9,8 @@ The method is `test`:
     "id": "1234",
     "method": "test",
     "params": {
-        "deleted": null,
-        "ref": "1234567890",
+        "trashed": null,
+        "id": "1234567890",
         "country": "UA",
         "index": "45",
         "status": "ok"

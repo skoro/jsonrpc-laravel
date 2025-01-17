@@ -23,16 +23,6 @@ final readonly class JsonRpcApi implements Rpc
         $this->parametersValidator->getValidator($handler, $request->params)->validate();
         $this->propertiesInitializer->setProperties($handler, $request->params);
 
-        //        try {
-        //            foreach ($request->params as $propName => $propValue) {
-        //                if (property_exists($handler, $propName)) {
-        //                    $handler->$propName = $propValue;
-        //                }
-        //            }
-        //        } catch (TypeError) {
-        //            throw new \Exception("Invalid parameter '{$propName}' type");
-        //        }
-
         return $handler;
     }
 }

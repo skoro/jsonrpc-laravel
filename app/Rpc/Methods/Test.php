@@ -13,10 +13,10 @@ final class Test extends RpcMethodHandler
 {
     #[Validate('nullable|boolean')]
     #[ByDefault(null)]
-    public readonly ?bool $deleted;
+    public readonly ?bool $trashed;
 
     #[Validate('required|string|max:255')]
-    public readonly string $ref;
+    public readonly string $id;
 
     #[Validate(['required', 'string', 'max:255', 'in:ok,done'])]
     public readonly string $status;

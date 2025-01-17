@@ -6,6 +6,9 @@ namespace App\Rpc\Contracts;
 
 use App\Rpc\RpcMethodHandler;
 
+/**
+ * Initializes handler properties.
+ */
 interface HandlerPropertiesInitializer
 {
     public function setProperties(RpcMethodHandler $handler, array $parameters): void;

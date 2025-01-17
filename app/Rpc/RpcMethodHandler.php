@@ -7,6 +7,8 @@ namespace App\Rpc;
 abstract class RpcMethodHandler
 {
     /**
+     * Custom parameter rules.
+     *
      * @return array<string, string|array>
      */
     public function rules(): array
